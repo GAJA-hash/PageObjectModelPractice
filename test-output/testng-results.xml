@@ -1,21 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="11" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-03T23:21:14 ADT" name="Default suite" finished-at="2022-11-03T23:21:21 ADT" duration-ms="7472">
+  <suite started-at="2022-11-06T21:24:32 AST" name="Default suite" finished-at="2022-11-06T21:24:59 AST" duration-ms="27230">
     <groups>
     </groups>
-    <test started-at="2022-11-03T23:21:14 ADT" name="Default test" finished-at="2022-11-03T23:21:21 ADT" duration-ms="7472">
+    <test started-at="2022-11-06T21:24:32 AST" name="Default test" finished-at="2022-11-06T21:24:59 AST" duration-ms="27230">
       <class name="com.infi.VBank.TestScripts.Test_Script_001">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.infi.VBank.TestScripts.Test_Script_001@515aebb0]" started-at="2022-11-03T23:21:14 ADT" name="setUp" finished-at="2022-11-03T23:21:20 ADT" duration-ms="6648" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:32 AST" name="setUp" finished-at="2022-11-06T21:24:39 AST" duration-ms="7613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateusercredentials()[pri:1, instance:com.infi.VBank.TestScripts.Test_Script_001@515aebb0]" started-at="2022-11-03T23:21:20 ADT" name="validateusercredentials" finished-at="2022-11-03T23:21:21 ADT" duration-ms="620" status="PASS">
+        <test-method signature="validateLoginDDF(java.lang.String,java.lang.String)[pri:6, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:41 AST" name="validateLoginDDF" data-provider="DDF1" finished-at="2022-11-06T21:24:45 AST" duration-ms="4181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateusercredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.infi.VBank.TestScripts.Test_Script_001@515aebb0]" started-at="2022-11-03T23:21:21 ADT" name="tearDown" finished-at="2022-11-03T23:21:21 ADT" duration-ms="166" status="PASS">
+        </test-method> <!-- validateLoginDDF -->
+        <test-method signature="validateLoginDDF(java.lang.String,java.lang.String)[pri:6, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:45 AST" name="validateLoginDDF" data-provider="DDF1" finished-at="2022-11-06T21:24:48 AST" duration-ms="3317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginDDF -->
+        <test-method signature="validateLoginDDF(java.lang.String,java.lang.String)[pri:6, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:48 AST" name="validateLoginDDF" data-provider="DDF1" finished-at="2022-11-06T21:24:52 AST" duration-ms="3288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginDDF -->
+        <test-method signature="validateLoginDDF(java.lang.String,java.lang.String)[pri:6, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:52 AST" name="validateLoginDDF" data-provider="DDF1" finished-at="2022-11-06T21:24:55 AST" duration-ms="3609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginDDF -->
+        <test-method signature="validateLoginDDF(java.lang.String,java.lang.String)[pri:6, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:55 AST" name="validateLoginDDF" data-provider="DDF1" finished-at="2022-11-06T21:24:59 AST" duration-ms="3485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginDDF -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.infi.VBank.TestScripts.Test_Script_001@5158b42f]" started-at="2022-11-06T21:24:59 AST" name="tearDown" finished-at="2022-11-06T21:24:59 AST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

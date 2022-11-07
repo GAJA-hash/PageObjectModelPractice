@@ -24,7 +24,7 @@ public class Test_Script_001 extends TestBase
 		page=new LoginPage();
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 1, enabled = true)
 	public void validateusercredentials()
 	{
 		String actual_text=page.verifyUsercredentials();
@@ -32,7 +32,7 @@ public class Test_Script_001 extends TestBase
 		Assert.assertEquals(actual_text, "Username : Admin");
 	}
 	
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void validateusercredentialsDisplay()
 	{
 		boolean flag=page.verifyUsercredentialsDisplay();
@@ -40,28 +40,47 @@ public class Test_Script_001 extends TestBase
 		Assert.assertTrue(flag);
 	}
 	
-	@Test(priority = 3, enabled=false)
+	@Test(priority = 3, enabled = true)
+	public void validateLoginPanelSpellcheck()
+	{
+		String actual_text=page.verifyLoginPanelSpellcheck();
+		
+		Assert.assertEquals(actual_text, "Login");
+	}
+	
+	@Test(priority = 3)
+	public void validateLoginPanelDisplay()
+	{
+		boolean flag = page.verifyLoginPanelDisplay();
+		
+		Assert.assertTrue(flag);
+	}
+	
+	@Test(priority = 4, enabled=true)
 	public void validateLogin()
 	{
 		page.Login();
 	}
 	
-	
-	@Test(priority = 4, dataProvider = "DDF1",enabled = false)//Imp for I/W, how to use multiple datas for testing(by using Data Provider)
-	public void validaeLoginDDF(String username, String password)
+	@Test (priority = 5)
+	public void validateLogout() {
+		page.Logout();
+	}
+	@Test(priority = 6, dataProvider = "DDF1",enabled = true)//(SEE BELOW->@Data Provider)Imp for I/W, how to use multiple datas for testing(by using Data Provider)
+	public void validateLoginDDF(String username, String password)
 	{
 		page.usernameTextbox.sendKeys(username);
 		page.passwordTextbox.sendKeys(password);
 		page.loginBtn.click();
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM"); 
-		page.Welcomemsg.click();
-		page.Logoutbtn.click();
+//		page.Welcomemsg.click();
+		page.Logout();
 		
 		
 		
 	}
 	
-	@AfterTest
+	@AfterTest(enabled = true)
 	public void tearDown()
 	{
 		Util_lib.closeWin();

@@ -14,31 +14,32 @@ public class LoginPage extends TestBase
 	@FindBy(xpath="//p[text()='Username : Admin']")
 	WebElement usercredentials;
 	
-	@FindBy(css="#logInPanelHeading")
+	@FindBy(xpath="//h5[text()='Login']")
 	WebElement loginpanelHeading;
 	
-	@FindBy(css="#txtUsername")
+	@FindBy(xpath="//input[@placeholder='Username']")
 	public WebElement usernameTextbox;
 	
-	@FindBy(css="#txtPassword")
+	@FindBy(xpath="//input[@placeholder='Password']")
 	public WebElement passwordTextbox;
 	
-	@FindBy(name="Submit")
+	@FindBy(xpath="//button[@type='submit']")
 	public WebElement loginBtn;
 	
-	@FindBy(xpath="//a[text()='Forgot your password?']")
+	@FindBy(xpath ="//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")
+	public WebElement logoutBtnDropdown;
+	
+	@FindBy(xpath ="//a[@href='/web/index.php/auth/logout' ]")
+	public WebElement logoutBtn;
+	
+	@FindBy(xpath="//p[text()='Forgot your password? ']")
 	WebElement forgotPassword;
 	
 	@FindBy(id="welcome")
 	public WebElement Welcomemsg;
-	
-	
-	@FindBy(xpath="//a[text()='Logout']")
-	
-	public WebElement Logoutbtn;
-	
-	
-	
+		
+
+
 	public LoginPage()
 	{
 		super();
@@ -75,9 +76,11 @@ public class LoginPage extends TestBase
 		
 		loginBtn.click();
 	}
-	
-	
-	
-	
-	
+	public void Logout()
+	{
+
+		logoutBtnDropdown.click();
+		
+		logoutBtn.click();
+	}
 }

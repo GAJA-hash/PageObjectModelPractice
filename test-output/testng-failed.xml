@@ -6,7 +6,7 @@
       <class name="com.infi.VBank.TestScripts.Test_Script_001">
         <methods>
           <include name="tearDown"/>
-          <include name="validateusercredentials"/>
+          <include name="validaeLoginDDF"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.infi.VBank.TestScripts.Test_Script_001 -->
