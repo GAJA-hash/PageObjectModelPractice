@@ -74,10 +74,7 @@ public class Test_Script_001 extends TestBase
 		page.loginBtn.click();
 		Assert.assertEquals(driver.getTitle(), "OrangeHRM"); 
 //		page.Welcomemsg.click();
-		page.Logout();
-		
-		
-		
+		page.Logout();	
 	}
 	
 	@AfterTest(enabled = true)
